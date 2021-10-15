@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import { useStore } from "store";
+import { Header, Container, Filters, Card } from "components";
+import "./App.css";
 
 function App() {
+  const [vacancies, getVacancies, filterTags] = useStore((state) => [
+    state.vacancies,
+    state.getVacancies,
+    state.filterTags,
+  ]);
+
+  const filterVacancies = (v) => {
+    return (filterTags || []).every((t) => (v.tags || []).includes(t));
+  };
+
+  useEffect(() => {
+    getVacancies();
+  }, [getVacancies]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Container>
+        <Filters />
+        {vacancies.filter(filterVacancies).map((c) => (
+          <Card key={c.id} {...c} />
+        ))}
+      </Container>
     </div>
   );
 }

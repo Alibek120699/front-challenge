@@ -1,0 +1,47 @@
+.card {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  width: 100%;
+  height: 152px;
+  padding: 32px 40px;
+  margin-bottom: 24px;
+}
+
+.card__container {
+  display: flex;
+  align-items: center;
+  height: 88px;
+}
+
+.card__image {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  margin-right: 24px;
+}
+
+.card__info {
+  color: #5ca5a5;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card__info__company {
+  font-size: 16px;
+}
+
+.card__info__position {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.card__info__requirements {
+  font-weight: normal;
+  color: #7c8f8f;
+}
