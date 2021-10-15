@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/front-challenge/static/css/main.a004f418.chunk.css",
+    "main.css": "/front-challenge/static/css/main.68bb4a8e.chunk.css",
     "main.js": "/front-challenge/static/js/main.df52f8e2.chunk.js",
     "main.js.map": "/front-challenge/static/js/main.df52f8e2.chunk.js.map",
     "runtime-main.js": "/front-challenge/static/js/runtime-main.dd373ae3.js",
@@ -10,13 +10,13 @@
     "static/js/3.efad5687.chunk.js": "/front-challenge/static/js/3.efad5687.chunk.js",
     "static/js/3.efad5687.chunk.js.map": "/front-challenge/static/js/3.efad5687.chunk.js.map",
     "index.html": "/front-challenge/index.html",
-    "static/css/main.a004f418.chunk.css.map": "/front-challenge/static/css/main.a004f418.chunk.css.map",
+    "static/css/main.68bb4a8e.chunk.css.map": "/front-challenge/static/css/main.68bb4a8e.chunk.css.map",
     "static/js/2.e6fa946b.chunk.js.LICENSE.txt": "/front-challenge/static/js/2.e6fa946b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.dd373ae3.js",
     "static/js/2.e6fa946b.chunk.js",
-    "static/css/main.a004f418.chunk.css",
+    "static/css/main.68bb4a8e.chunk.css",
     "static/js/main.df52f8e2.chunk.js"
   ]
 }
