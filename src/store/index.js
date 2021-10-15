@@ -13,7 +13,7 @@ export const useStore = create((set) => ({
   vacancies: [],
   getVacancies: () =>
     set((state) =>
-      fetch("/data.json")
+      fetch("data.json")
         .then((res) => res.json())
         .then((res) => {
           set({ vacancies: res.map(parseVacancy) });

@@ -6,7 +6,7 @@ export function FilterTag({ tag, removeTag }) {
         className="filter-tag__delete-button"
         onClick={() => removeTag(tag)}
       >
-        <img src="/images/icon-remove.svg" alt="delete" />
+        <img src="images/icon-remove.svg" alt="delete" />
       </button>
     </div>
   );
