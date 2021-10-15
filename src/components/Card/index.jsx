@@ -34,6 +34,7 @@ export function Card({
           )}
         </div>
       </div>
+      <hr className="card__divider" />
       <Tags tags={tags} />
     </div>
   );

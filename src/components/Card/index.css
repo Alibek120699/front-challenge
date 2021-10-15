@@ -5,9 +5,18 @@
   align-items: center;
   background: white;
   width: 100%;
-  height: 152px;
+  min-height: 152px;
+  height: auto;
   padding: 32px 40px;
   margin-bottom: 24px;
+}
+
+.card:hover {
+  border-left: 3px solid #5ca5a5;
+}
+
+.card__divider {
+  display: none;
 }
 
 .card__container {
@@ -17,6 +26,7 @@
 }
 
 .card__image {
+  position: absolute;
   width: 88px;
   height: 88px;
   border-radius: 50%;
@@ -26,6 +36,7 @@
 .card__info {
   color: #5ca5a5;
   font-weight: bold;
+  margin-left: 112px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -44,4 +55,34 @@
 .card__info__requirements {
   font-weight: normal;
   color: #7c8f8f;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+
+  .card__image {
+    position: absolute;
+    top: -24px;
+    left: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 24px;
+  }
+
+  .card__divider {
+    display: block;
+    width: 100%;
+    background-color: #b7c4c4;
+    border: 1px solid #b7c4c4;
+    margin: 16px 0;
+  }
+
+  .card__info {
+    margin-left: 0;
+  }
 }
