@@ -11,7 +11,7 @@
   height: auto;
   margin: 0 auto;
   margin-bottom: 40px;
-  z-index: 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .filters__clear-button {
