@@ -43,8 +43,30 @@
   height: 100%;
 }
 
+.card__info__features {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+}
+
+.card__info--new {
+  color: white;
+  background: #5ca5a5;
+  padding: 5px 8px;
+  border-radius: 25px;
+  margin-right: 8px;
+}
+
+.card__info--featured {
+  color: white;
+  background: #2b3939;
+  padding: 5px 8px;
+  border-radius: 25px;
+}
+
 .card__info__company {
   font-size: 16px;
+  margin-right: 16px;
 }
 
 .card__info__position {
@@ -62,6 +84,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 40px;
+    padding: 32px 16px;
   }
 
   .card__image {

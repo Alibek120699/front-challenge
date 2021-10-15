@@ -18,7 +18,11 @@ export function Card({
       <div className="card__container">
         <img className="card__image" src={image} alt="card" />
         <div className="card__info">
-          <p className="card__info__company">{company}</p>
+          <div className="card__info__features">
+            <p className="card__info__company">{company}</p>
+            {isNew && <div className="card__info--new">NEW!</div>}
+            {isFeatured && <div className="card__info--featured">FEATURED</div>}
+          </div>
           <p className="card__info__position">{position}</p>
           {requirements.length > 0 && (
             <div className="card__info__requirements">

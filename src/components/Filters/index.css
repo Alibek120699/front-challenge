@@ -68,3 +68,9 @@
 .filter-tag__delete-button:hover {
   background: #2b3939;
 }
+
+@media (max-width: 768px) {
+  .filters {
+    padding: 20px;
+  }
+}
